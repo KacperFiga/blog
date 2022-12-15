@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import axios from "axios";
+import { POSTS_API } from "../constants/paths";
 export default function Home({ posts: { data } }: any) {
   console.log(data);
 
@@ -26,7 +27,7 @@ export default function Home({ posts: { data } }: any) {
 }
 
 export const getStaticProps = async () => {
-  const postsResponse = await axios.get("http://localhost:1337/api/posts");
+  const postsResponse = await axios.get(POSTS_API);
 
   return {
     props: {
