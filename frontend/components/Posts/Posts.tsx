@@ -9,6 +9,7 @@ export const Posts = ({ data }: postsI) => {
       title={post.attributes.title}
       description={post.attributes.description}
       date={post.attributes.date}
+      id={post.id}
     />
   ));
 
