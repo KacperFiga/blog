@@ -6,7 +6,7 @@ import { Header } from "../components/Header/Header";
 import { Posts } from "../components/Posts/Posts";
 import { postsI } from "../constants/types";
 
-export default function Home({ data: { data } }: postsI) {
+const Home = ({ data: { data } }: postsI) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -18,7 +18,7 @@ export default function Home({ data: { data } }: postsI) {
       <Posts data={data} />
     </div>
   );
-}
+};
 
 export const getStaticProps = async () => {
   const postsResponse = await axios.get(POSTS_API);
@@ -30,3 +30,5 @@ export const getStaticProps = async () => {
     revalidate: 10,
   };
 };
+
+export default Home;

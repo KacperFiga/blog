@@ -1,11 +1,15 @@
+import { Box, Typography } from "@mui/material";
+
 export const Post = ({ title, content, date }: any) => (
-  <section>
+  <Box>
     <header>
       <h3> {title}</h3>
     </header>
-    <article>{content}</article>
+    <article>
+      <Typography>{content}</Typography>
+    </article>
     <section>
       <p>{date}</p>
     </section>
-  </section>
+  </Box>
 );
