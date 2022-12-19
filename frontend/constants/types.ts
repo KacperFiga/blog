@@ -10,6 +10,9 @@ export interface postI {
     date: {
       type: string;
     };
+    description: {
+      type: string;
+    };
   };
 }
 
@@ -25,6 +28,9 @@ export interface postsI {
         type: string;
       };
       date: {
+        type: string;
+      };
+      description: {
         type: string;
       };
     };
