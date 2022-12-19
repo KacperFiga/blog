@@ -7,7 +7,7 @@ export const Posts = ({ data }: postsI) => {
     <Post
       key={post.id}
       title={post.attributes.title}
-      content={post.attributes.content}
+      description={post.attributes.description}
       date={post.attributes.date}
     />
   ));
