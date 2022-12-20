@@ -5,7 +5,6 @@ import { POSTS_API } from "../../constants/paths";
 import { postI } from "../../constants/types";
 
 const PostPage = ({ data: { data } }: any) => {
-  console.log(data);
   return (
     <Box>
       <Typography>{data.attributes.title}</Typography>

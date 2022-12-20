@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import { shades } from "../../constants/theme";
 
 export const Header = () => (
   <Box>
