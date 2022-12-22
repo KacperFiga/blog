@@ -14,7 +14,7 @@ export const Footer = () => {
     <Box component="footer" className={styles.container} sx={footerStyles}>
       <Box>
         Strona została wykonana w celu przestesowania integracji Strapi z
-        Frontem, kwestia stylów została potraktowana drugorzędnie
+        Next.js, kwestia stylów została potraktowana drugorzędnie
       </Box>
     </Box>
   );
