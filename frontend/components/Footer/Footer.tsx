@@ -1,5 +1,21 @@
+import { Box } from "@mui/material";
 import React from "react";
+import { shades } from "../../constants/theme";
+import styles from "./Footer.module.css";
+
+const footerStyles = {
+  backgroundColor: shades.primary[500],
+  color: shades.neutral[500],
+  padding: { md: "20px 98px", xs: "20px 20px" },
+};
 
 export const Footer = () => {
-  return <footer>Footer</footer>;
+  return (
+    <Box component="footer" className={styles.container} sx={footerStyles}>
+      <Box>
+        Strona została wykonana w celu przestesowania integracji Strapi z
+        Frontem, kwestia stylów została potraktowana drugorzędnie
+      </Box>
+    </Box>
+  );
 };
