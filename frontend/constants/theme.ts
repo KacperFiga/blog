@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/system";
+import { createTheme } from "@mui/material/styles";
 
 export const shades = {
   primary: {
@@ -52,22 +52,17 @@ export const theme = createTheme({
   },
   typography: {
     fontFamily: ["Fauna One", "sans-serif"].join(","),
-    fontSize: 11,
     h1: {
-      fontFamily: ["Cinzel", "sans-serif"].join(","),
-      fontSize: 48,
+      fontFamily: ["Fauna One", "sans-serif"].join(","),
     },
     h2: {
-      fontFamily: ["Cinzel", "sans-serif"].join(","),
-      fontSize: 36,
+      fontFamily: ["Fauna One", "sans-serif"].join(","),
     },
     h3: {
-      fontFamily: ["Cinzel", "sans-serif"].join(","),
-      fontSize: 20,
+      fontFamily: ["Fauna One", "sans-serif"].join(","),
     },
     h4: {
-      fontFamily: ["Cinzel", "sans-serif"].join(","),
-      fontSize: 14,
+      fontFamily: ["Fauna One", "sans-serif"].join(","),
     },
   },
 });

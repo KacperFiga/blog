@@ -2,7 +2,6 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import axios from "axios";
 import { POSTS_API } from "../constants/paths";
-import { Header } from "../components/Header/Header";
 import { Posts } from "../components/Posts/Posts";
 import { postsI } from "../constants/types";
 
